@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>مجموعة GIF 1‑9</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html,body{
+    margin:0;padding:0;
+    background:#000;
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
+}
+.page{
+    min-height:100vh;               /* كل صفحة تملأ الشاشة */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:2px solid #444;   /* فاصل بسيط (اختياري) */
+}
+.page img{
+    max-width:100%;
+    max-height:100%;
+    display:block;
+    /* أبعاد ثابتة تساعد على تجنب القفز (CLS) */
+    width:800px;      /* عدّل حسب أبعاد GIF الأصلية إذا أردت */
+    height:auto;
+}
+@media print{
+    .page{
+        page-break-after:always;
+        min-height:auto;
+        border:none;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="page"><img src="1.gif" alt="صورة 1" loading="lazy"></section>
+<section class="page"><img src="2.gif" alt="صورة 2" loading="lazy"></section>
+<section class="page"><img src="3.gif" alt="صورة 3" loading="lazy"></section>
+<section class="page"><img src="4.gif" alt="صورة 4" loading="lazy"></section>
+<section class="page"><img src="5.gif" alt="صورة 5" loading="lazy"></section>
+<section class="page"><img src="6.gif" alt="صورة 6" loading="lazy"></section>
+<section class="page"><img src="7.gif" alt="صورة 7" loading="lazy"></section>
+<section class="page"><img src="8.gif" alt="صورة 8" loading="lazy"></section>
+<section class="page"><img src="9.gif" alt="صورة 9" loading="lazy"></section>
+
+</body>
+</html>
